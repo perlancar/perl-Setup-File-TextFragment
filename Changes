@@ -1,6 +1,6 @@
 Revision history for Setup-File-TextFragment
 
-0.01    2012-09-12 (SHARYANTO) (not yet released)
+0.01    2012-09-12 (SHARYANTO)
 
         - First release. Previous incarnation is Setup-Text-Snippet. Renamed to
           Setup-File-TextFragment and split the text fragment routines to
