@@ -10,6 +10,10 @@ use Text::Fragment;
 
 # VERSION
 
+require Exporter;
+our @ISA       = qw(Exporter);
+our @EXPORT_OK = qw(setup_text_fragment);
+
 our %SPEC;
 
 $SPEC{setup_text_fragment} = {
