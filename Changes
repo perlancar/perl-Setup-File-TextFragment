@@ -2,7 +2,7 @@ Revision history for Setup-File-TextFragment
 
 0.02    2013-04-25 (SHARYANTO)
 
-        No functional changes. Fix bug: forgot to export.
+        - No functional changes. Fix bug: forgot to export.
 
 
 0.01    2012-09-12 (SHARYANTO)
@@ -10,4 +10,3 @@ Revision history for Setup-File-TextFragment
         - First release. Previous incarnation is Setup-Text-Snippet. Renamed to
           Setup-File-TextFragment and split the text fragment routines to
           Setup-Text-Fragment.
-
