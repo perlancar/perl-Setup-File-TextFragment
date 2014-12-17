@@ -1,5 +1,8 @@
 package Setup::File::TextFragment;
 
+# DATE
+# VERSION
+
 use 5.010001;
 use strict;
 use warnings;
@@ -7,8 +10,6 @@ use Log::Any '$log';
 
 use File::Trash::Undoable;
 use Text::Fragment;
-
-# VERSION
 
 require Exporter;
 our @ISA       = qw(Exporter);
@@ -18,7 +19,7 @@ our %SPEC;
 
 $SPEC{setup_text_fragment} = {
     v           => 1.1,
-    summary     => 'Insert/delete text fragment in a file',
+    summary     => 'Insert/delete text fragment in a file (with undo support)',
     description => <<'_',
 
 On do, will insert fragment to file (or delete, if `should_exist` is set to
@@ -178,7 +179,7 @@ sub setup_text_fragment {
 }
 
 1;
-# ABSTRACT: Insert/delete text fragment in a file, with undo support
+# ABSTRACT:
 
 =head1 SEE ALSO
 
