@@ -1,5 +1,12 @@
 Revision history for Setup-File-TextFragment
 
+0.04    2015-08-18 (PERLANCAR)
+
+	- No functional changes.
+
+	- Switch from Log::Any to Log::Any::IfLOG.
+
+
 0.03    2014-05-17 (SHARYANTO)
 
         - No functional changes.
