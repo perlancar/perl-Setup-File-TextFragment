@@ -6,7 +6,7 @@ package Setup::File::TextFragment;
 use 5.010001;
 use strict;
 use warnings;
-use Log::Any::IfLOG '$log';
+use Log::ger;
 
 use File::Trash::Undoable;
 use Text::Fragment;
@@ -146,10 +146,10 @@ sub setup_text_fragment {
 
     if ($tx_action eq 'check_state') {
         if ($should_exist) {
-            $log->info("(DRY) Inserting fragment $id to $path ...")
+            log_info("(DRY) Inserting fragment $id to $path ...")
                 if $dry_run;
         } else {
-            $log->info("(DRY) Deleting fragment $id from $path ...")
+            log_info("(DRY) Deleting fragment $id from $path ...")
                 if $dry_run;
         }
         return [200, "Fragment $id needs to be inserted to $path", undef,
@@ -161,9 +161,9 @@ sub setup_text_fragment {
                 ]}];
     } elsif ($tx_action eq 'fix_state') {
         if ($should_exist) {
-            $log->info("Inserting fragment $id to $path ...");
+            log_info("Inserting fragment $id to $path ...");
         } else {
-            $log->info("Deleting fragment $id from $path ...");
+            log_info("Deleting fragment $id from $path ...");
         }
 
         File::Trash::Undoable::trash(
