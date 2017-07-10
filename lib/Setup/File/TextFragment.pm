@@ -124,7 +124,7 @@ sub setup_text_fragment {
     return [412, "$path is not a regular file"] if $is_sym||!$is_file;
 
     open my($fh), "<", $path or return [500, "Can't open $path: $!"];
-    my $text = do { local $/; ~~<$fh> };
+    my $text = do { local $/; scalar <$fh> };
 
     my $res;
     if ($should_exist) {
