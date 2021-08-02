@@ -183,8 +183,12 @@ sub setup_text_fragment {
 
 =head1 SEE ALSO
 
-L<Text::Fragment>
+A more general version of this: L<Setup::File::Edit>.
 
-L<Setup>
+A variation that adds/removes line to file: L<Setup::File::Line>.
+
+Backend for this module: L<Text::Fragment>
+
+The Setup framework: L<Setup>
 
 =cut
